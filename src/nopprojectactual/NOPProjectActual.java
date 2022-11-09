@@ -22,6 +22,16 @@ public class NOPProjectActual {
         return szokoeve;
     }
     
+     public static String szamforditas(String szam) {
+        String fordit;
+        String a = "";
+        for (int i = 0; i< szam.length(); i++)
+        {
+            fordit = a.concat(szam.charAt(szam.length()-i-1)+"");
+        }
+         System.out.println(fordit);
+     }
+    
     public static void sorminta() {
         System.out.println("*******************************************************************************************************************************************************************************");
     }
