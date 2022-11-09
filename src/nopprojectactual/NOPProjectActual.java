@@ -9,14 +9,24 @@ package nopprojectactual;
  *
  * @author user3
  */
+import java.util.Scanner;
+
 public class NOPProjectActual {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Hello");
+    
+    public static int szokoev(int year) {
+        int szokoeve = 0;
+        if (year % 400 == 0 || year % 100 == 0 || year % 4 == 0) {  //kiszámoljuk hogy szökőév van 
+            szokoeve++;
+        }
+        return szokoeve;
     }
     
+    public static void sorminta() {
+        System.out.println("*******************************************************************************************************************************************************************************");
+    }
+
+    public static void main(String[] args) {
+       
+}
 }
