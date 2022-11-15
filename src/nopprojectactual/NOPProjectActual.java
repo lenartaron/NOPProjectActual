@@ -29,7 +29,7 @@ public class NOPProjectActual {
         {
             fordit = a.concat(szam.charAt(szam.length()-i-1)+"");
         }
-         System.out.println(fordit);
+         return fordit;
      }
     
     public static void sorminta() {
