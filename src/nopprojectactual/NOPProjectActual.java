@@ -36,6 +36,20 @@ public class NOPProjectActual {
     }
 
     public static void main(String[] args) {
-       
-}
+        Scanner bill = new Scanner(System.in);
+        System.out.println("Kérem adjon meg egy évszámot: ");
+        int szam = bill.nextInt();
+        int szam1 = szam;
+        sorminta();
+        if (szokoev(szam) == 1) {
+            System.out.println("Szökőév");
+        } else{
+            System.out.println("Nem szökőév");
+        }
+        sorminta();
+        String szam2 = String.valueOf(szam1);
+        System.out.println(szamforditas(szam2));
+        sorminta();
+        
+    }
 }
